@@ -1,0 +1,132 @@
+#Contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4em;
+  background-color: #3b7fc0;
+  overflow: hidden;
+}
+.contactImg img {
+  width: 79%;
+}
+.contactImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 0em; */
+  margin-top: 2em;
+}
+.form,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.form input,
+textarea {
+  width: 19em;
+  height: 1em;
+  border-radius: 1em;
+  border: 1px solid;
+  padding: 1em;
+}
+.heading2 {
+  font-size: 1.7em;
+  font-family: "Raleway";
+  background-color: #3b7fc0;
+  padding: 0.3em;
+}
+.side .blob {
+  position: absolute;
+  z-index: 0;
+  left: -53em;
+  top: -6em;
+  width: 98em;
+}
+.side {
+  position: relative;
+}
+.form {
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 1300px) {
+  #Contact {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .side .blob {
+    left: -33em !important;
+    width: 69em;
+    top: -9em;
+  }
+  .form input,
+  textarea {
+    width: 17em;
+  }
+  .form {
+    top: 5em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .side .blob {
+    display: none;
+  }
+  .side {
+    background-color: white;
+    padding: 5em;
+  }
+  .contactImg h2 {
+    width: 9em;
+    text-align: center;
+  }
+  .contactImg {
+    padding: 0em;
+  }
+  .form input,
+  textarea {
+    width: 15em;
+  }
+  .form {
+    top: 1em;
+  }
+}
+.response {
+  padding: 1em;
+  width: 15em;
+  font-size: 0.7em;
+  text-align: center;
+  background-color: #3b7fc0;
+  color: white;
+  letter-spacing: 0.2px;
+}
+@media only screen and (max-width: 650px) {
+  .form input,
+  textarea {
+    width: 15em;
+  }
+  .side {
+    padding: 2em;
+    width: 91%;
+  }
+  .heading2 {
+    font-size: 1em;
+    padding: 1em;
+  }
+  .form {
+    margin-top: 0em;
+  }
+  #Contact {
+    flex-direction: column;
+    background: white;
+  }
+  .contactImg {
+    background: linear-gradient(125deg, white, #2d6ca8);
+    margin-bottom: 0em;
+  }
+  .main-contact-img {
+    display: contents;
+  }
+}

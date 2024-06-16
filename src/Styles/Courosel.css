@@ -1,0 +1,55 @@
+.courosel .block {
+  text-align: center;
+}
+.margin {
+  font-family: "Raleway";
+  font-weight: 600;
+}
+/* src/Styles/Carousel.css */
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  justify-content: space-around;
+  gap: 4em;
+}
+.carousel {
+  background-color: #3b7fc0;
+}
+.ServicesText {
+  font-size: 1.07em;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(200px * 10);
+  animation: scroll 20s linear infinite;
+  background-color: #3b7fc0;
+  color: white;
+  padding: 2em;
+  align-items: center;
+}
+
+.margin {
+  font-size: 2em;
+  font-weight: bold;
+}
+.block {
+  text-shadow: 5px 6px 15px white;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-200px * 5)
+    ); /* Move left by half the total width */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-track {
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,102 @@
+.info span {
+  font-family: "Cormorant Infant", serif !important;
+  padding: 0em 0.2em;
+  font-size: 2.6em;
+}
+.info {
+  font-size: 1.2em;
+  width: 66vw;
+}
+#About {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 2.3em;
+  font-family: "Raleway";
+  font-size: 2.3em;
+  display: inline;
+  background-color: #3b7fc0;
+  padding: 0.2em;
+  margin-bottom: 0;
+}
+.blockAbout {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 4em 6em;
+  gap: 2.7em;
+  align-items: center;
+}
+.AboutBox {
+  gap: 1em;
+  border: 0.5px solid grey;
+  padding: 1.7em;
+  display: flex;
+  padding-bottom: 1em;
+  flex-direction: column;
+  align-items: center;
+  transition: all;
+  transition-duration: 200ms;
+  height: 27em;
+  width: 15em;
+}
+.aboutImg img {
+  width: 11em;
+}
+.aboutInfo p {
+  font-size: 0.8em;
+}
+.AboutBox:hover {
+  box-shadow: 0.5em 0.5em 20px #00000080;
+  .aboutImg {
+    transform: scale(110%);
+  }
+}
+.ItemTitle {
+  font-family: "Raleway";
+  font-size: 1.6em;
+}
+.mt-3 {
+  margin-top: -1em;
+}
+.index {
+  font-size: 2em;
+  font-family: "Raleway";
+  margin: 0.5em;
+}
+@media only screen and (max-width: 650px) {
+  .AboutBox {
+    gap: 0em;
+  }
+  .blockAbout {
+    flex-direction: column;
+    padding: 2em 2em;
+    gap: 2em;
+    align-items: center;
+    width: 75%;
+  }
+  .index {
+    margin-top: 0.5em;
+  }
+}
+@media only screen and (max-width: 916px) {
+  .aboutImg img {
+    width: 7em;
+  }
+  .blockAbout {
+    /* flex-direction: column; */
+    padding: 2em 4em;
+  }
+}
+@media only screen and (max-width: 1152px) {
+  .blockAbout {
+    padding: 2em 2em;
+    gap: 1em;
+  }
+  .aboutImg img {
+    width: 11em;
+  }
+}

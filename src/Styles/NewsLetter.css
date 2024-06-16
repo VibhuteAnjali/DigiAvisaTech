@@ -1,0 +1,82 @@
+.newsLetter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3b7fc0;
+  padding: 2em;
+}
+.left h2 {
+  font-size: 2.7em;
+  font-family: "Raleway";
+}
+.left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.newsl input {
+  height: 2em;
+  padding: 1em;
+  width: 22em;
+  border-radius: 2em;
+  border: none;
+}
+.left button {
+  background-color: #3b7fc0;
+  position: absolute;
+  right: 11em;
+  border-radius: 2em;
+  width: 5em;
+  height: 3em;
+  border: none;
+  top: 13.7em;
+  cursor: pointer;
+}
+.arrow {
+  position: absolute;
+  z-index: 2;
+}
+.arrow:hover {
+  position: relative;
+  right: 10em;
+}
+.newsl img {
+  width: 3em;
+}
+.left button {
+  right: 11em;
+  top: 13.7em;
+}
+@media only screen and (max-width: 650px) {
+  .left h2 {
+    margin-top: 0em;
+  }
+  .left button {
+    right: 1em;
+    top: 16.5em;
+  }
+  .newsLetter {
+    padding: 1em;
+    background: linear-gradient(120deg, white, #2d6ca8);
+  }
+  .right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .left button {
+    right: 9em;
+
+    top: 17.7em;
+  }
+}
+@media only screen and (min-width: 824px) {
+  .left button {
+    right: 11em;
+    top: 13.7em;
+  }
+}

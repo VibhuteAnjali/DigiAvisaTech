@@ -1,0 +1,102 @@
+.servicesBlock {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 3em;
+  gap: 2em;
+  align-items: stretch;
+}
+.servicesBlock .block {
+  padding: 1em;
+  text-align: center;
+}
+.servicesBlock2 {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 17vw;
+  align-items: stretch;
+}
+.servicesBlock2 .block {
+  padding: 1em;
+  text-align: center;
+}
+#Service {
+  text-align: center;
+  margin-top: 3%;
+}
+.serviceImg {
+  width: 81%;
+  height: 266px;
+  margin-top: 2em;
+}
+.servicesBlock .block,
+.servicesBlock2 .block {
+  width: 25vw;
+  border: 1px solid;
+}
+.block h3 {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  line-height: 1.2;
+  word-spacing: 2px;
+}
+.block:hover {
+  box-shadow: 0.5em 0.5em 20px #00000080;
+  .serviceImg {
+    transform: scale(110%);
+  }
+}
+.content {
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1075px) {
+  .serviceImg {
+    width: 81%;
+    height: 231px;
+    margin-top: 2em;
+  }
+  .servicesBlock .block {
+    padding: 0em;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .servicesBlock {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em;
+  }
+  .servicesBlock2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicesBlock .block,
+  .servicesBlock2.block {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesBlock {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0em;
+    gap: 2em;
+    align-items: center;
+  }
+  .form {
+    top: 0em;
+  }
+  .contactImg img {
+    width: 58%;
+  }
+  .servicesBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
