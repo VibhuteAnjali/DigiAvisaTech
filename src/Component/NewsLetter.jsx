@@ -77,7 +77,7 @@ export default function NewsLetter() {
       </div>
       <div className="right">
         <divs data-aos="fade-left">
-          <img src={woman} />
+          <img src={woman} alt="woman"/>
         </divs>
       </div>
     </div>
