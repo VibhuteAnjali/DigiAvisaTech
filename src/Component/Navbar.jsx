@@ -13,7 +13,6 @@ export default function Navbar() {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -46,7 +45,7 @@ export default function Navbar() {
           <a href="#Service" className="link">
             Services
           </a>
-          
+         
           <a href="#Contact" className="link">
             Contact Us
           </a>
@@ -55,7 +54,7 @@ export default function Navbar() {
 
       <div className="rightcorner">
         {
-          <div className="hamburger" onClick={(showNav) => setShowNav(!showNav)}>
+          <div className="hamburger" onTouchStart={() => setShowNav(!showNav)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -69,9 +68,7 @@ export default function Navbar() {
           </div>
         }
         <div className="actionButton">
-           <a href="#NewsLetter">
-            <button className="ctc">Get Started</button>
-          </a>
+          <button className="ctc">GET STARTED</button>
         </div>
       </div>
     </div>
