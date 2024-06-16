@@ -1,89 +1,4 @@
-// import "../Styles/Contact.css";
-// import contact from "../assets/contact.png";
-// import blob from "../assets/blobContact.png";
-// import { useEffect, useState } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// export default function Contact() {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [message, setMessage] = useState("");
-//   const [response, setResponse] = useState("");
-//   useEffect(() => {
-//     AOS.init({ duration: 1000 });
-//   }, []);
-//   async function handeSubmit(e) {
-//     e.preventDefault();
-//     if (name && email && message) {
-//       if (name.length > 5 && email.includes("@")) {
-//         const response = await fetch("http://localhost:3000/contactUs", {
-//           method: "POST",
-//           headers: {
-//             "Content-Type": "application/json",
-//           },
-//           body: JSON.stringify({ name, email, message }),
-//         });
 
-//         if (response.ok) {
-//           setResponse(
-//             "Thank you for your time. We will get back to you shortly!"
-//           );
-//           setName("");
-//           setEmail("");
-//           setMessage("");
-//         } else {
-//           setResponse("Failed to send message.");
-//         }
-//       }
-//     } else {
-//       setResponse("Please fill the details properly!");
-//     }
-//     console.log(response);
-//   }
-//   return (
-//     <div id="Contact">
-//       <div className="contactImg">
-//         <divs data-aos="fade-right">
-//           <h2>LET’S SCALE YOUR BRAND TOGETHER</h2>
-//           <img src={contact} alt="contact" />
-//         </divs>
-//       </div>
-//       <div className="side">
-//         <img src={blob} alt="blob" className="blob" />
-//         <div className="form">
-//           <h3 className="heading2">GET IN TOUCH!</h3>
-//           <form action="/contact" method="post">
-//             <input
-//               type="text"
-//               name={name}
-//               id="name"
-//               value={name}
-//               placeholder="Name"
-//               onChange={(e) => setName(e.target.value)}
-//             />
-//             <input
-//               type="email"
-//               name={email}
-//               id="email"
-//               value={email}
-//               placeholder="Email"
-//               onChange={(e) => setEmail(e.target.value)}
-//             />
-//             <textarea
-//               placeholder="Message"
-//               value={message}
-//               onChange={(e) => setMessage(e.target.value)}
-//             ></textarea>
-//             {response && <p className="response">{response}</p>}
-//             <button className="ctc" type="submit" onClick={handeSubmit}>
-//               SEND
-//             </button>
-//           </form>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 import "../Styles/Contact.css";
 import contact from "../assets/contact.png";
 import blob from "../assets/blobContact.png";
@@ -116,7 +31,7 @@ export default function Contact() {
         const currentDate = getCurrentDate();
         console.log(currentDate);
         try {
-          const response = await fetch("http://localhost:3000/contactUs", {
+          const response = await fetch("https://backend-avisa.vercel.app/contactUs", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
