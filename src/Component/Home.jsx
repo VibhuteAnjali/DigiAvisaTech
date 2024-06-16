@@ -54,7 +54,9 @@ export default function Home() {
             Email/Affiliate Marketing, SMM, software & IT infrastructure. One
             stop solution for your digital needs!
           </p>
-          <button className="ctc">Get Started</button>
+           <a href="#NewsLetter">
+            <button className="ctc">Get Started</button>
+          </a>
         </div>
         <div className="images">
           <img src={woman} alt="homepage" className="home" />
