@@ -8,6 +8,7 @@
 .servicesBlock .block {
   padding: 1em;
   text-align: center;
+      height: 27em;
 }
 .servicesBlock2 {
   width: 70%;
@@ -27,8 +28,8 @@
 }
 .serviceImg {
   width: 81%;
-  height: 266px;
   margin-top: 2em;
+  height: 223px;
 }
 .servicesBlock .block,
 .servicesBlock2 .block {
