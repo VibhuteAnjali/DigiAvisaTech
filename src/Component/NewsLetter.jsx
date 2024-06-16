@@ -35,7 +35,7 @@ export default function NewsLetter() {
     e.preventDefault();
     if (email) {
       const currentDate = getCurrentDate();
-      const response = await fetch("http://localhost:3000/newsLetter", {
+      const response = await fetch("https://backend-avisa.vercel.app/newsLetter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
