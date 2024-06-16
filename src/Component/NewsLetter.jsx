@@ -44,6 +44,7 @@ export default function NewsLetter() {
       });
       if (response.ok) {
         setResponse("Thank you for keeping in touch!");
+        setEmail("");
       } else {
         setError("Sorry there was a error. Please try again later");
       }
@@ -57,24 +58,21 @@ export default function NewsLetter() {
         <p>Our News Letter</p>
         <h2>Don’t Miss Our Daily Updates!</h2>
         <div className="newsl">
-          {response ? (
-            <p>{response}</p>
-          ) : (
-            <div>
-              <input
-                type="text"
-                name="email"
-                value={email}
-                id="email"
-                placeholder="Enter your Email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <button onClick={handleSubmit}>
-                <img src={arrow} alt="arrow" />
-              </button>
-              {error && <p>{error}</p>}
-            </div>
-          )}
+          <div>
+            <input
+              type="text"
+              name="email"
+              value={email}
+              id="email"
+              placeholder="Enter your Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button onClick={handleSubmit}>
+              <img src={arrow} alt="arrow" />
+            </button>
+            {error && <p>{error}</p>}
+            {response && <p>{response}</p>}
+          </div>
         </div>
       </div>
       <div className="right">
