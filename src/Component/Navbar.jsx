@@ -59,7 +59,7 @@ export default function Navbar() {
 
       <div className="rightcorner">
         {
-          <div className="hamburger" onClick={() => setShowNav(!showNav)}>
+          <div className="hamburger" onTouchStart={() => setShowNav(!showNav)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
