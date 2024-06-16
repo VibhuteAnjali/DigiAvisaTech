@@ -8,7 +8,7 @@
 .servicesBlock .block {
   padding: 1em;
   text-align: center;
-      height: 27em;
+   height: 27em;
 }
 .servicesBlock2 {
   width: 70%;
@@ -82,6 +82,10 @@
   .servicesBlock2.block {
     width: 75%;
   }
+  .servicesBlock .block {
+ 
+   height: 28em;
+}
 }
 @media only screen and (max-width: 400px) {
   .servicesBlock {
