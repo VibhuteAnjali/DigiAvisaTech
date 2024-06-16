@@ -68,7 +68,7 @@ export default function NewsLetter() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <button onClick={handleSubmit}>
-              <img src={arrow} alt="arrow" />
+              <img src={arrow} alt="arrow" onClick={handleSubmit}/>
             </button>
             {error && <p>{error}</p>}
             {response && <p>{response}</p>}
