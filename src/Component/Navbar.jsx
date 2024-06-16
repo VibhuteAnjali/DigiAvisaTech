@@ -25,7 +25,7 @@ export default function Navbar() {
         <img src={logo} alt="logo" />
       </div>
 
-      {showNav &&  (
+      {showNav && responsive ? (
         <div className="navlinks2">
           <a href="#About" className="link">
             About Us
