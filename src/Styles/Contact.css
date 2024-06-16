@@ -9,6 +9,9 @@
 .contactImg img {
   width: 79%;
 }
+.contactImg h2{
+  color:white;
+}
 .contactImg {
   display: flex;
   flex-direction: column;
