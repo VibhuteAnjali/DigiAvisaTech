@@ -46,9 +46,7 @@ export default function Navbar() {
           <a href="#Service" className="link">
             Services
           </a>
-          <a href="" className="link">
-            Deals
-          </a>
+          
           <a href="#Contact" className="link">
             Contact Us
           </a>
