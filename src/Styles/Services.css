@@ -52,7 +52,8 @@
   padding: 1em;
 }
 .content p{
-      font-size: 0.9em;}
+  font-size: 0.9em;
+}
 @media only screen and (max-width: 1075px) {
   .serviceImg {
     width: 81%;
