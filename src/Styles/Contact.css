@@ -36,6 +36,7 @@ textarea {
   font-family: "Raleway";
   background-color: #3b7fc0;
   padding: 0.3em;
+  color:white;
 }
 .side .blob {
   position: absolute;
