@@ -73,7 +73,9 @@ export default function Navbar() {
           </div>
         }
         <div className="actionButton">
-          <button className="ctc">GET STARTED</button>
+           <a href="#NewsLetter">
+            <button className="ctc">Get Started</button>
+          </a>
         </div>
       </div>
     </div>
